@@ -125,7 +125,7 @@
     		<repository>
       		    <id>nexus</id>
      		    <name>prakash-release</name>
-      		    <urlhttp://65.0.178.156:8081/repository/prakash-release/</url>
+      		    <url>http://65.0.178.156:8081/repository/prakash-release/</url>
     		</repository>
 	    
        		<snapshotRepository>
