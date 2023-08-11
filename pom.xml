@@ -20,6 +20,8 @@
         <logback.version>1.1.3</logback.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+	<sonar.host.url>http://43.205.99.79:9000</sonar.host.url>
+        <sonar.login>squ_0dd49eb42f1008b5d1ac51bea609e0206af0a0ac</sonar.login>
     </properties>
 
     <dependencies>
@@ -119,6 +121,19 @@
     		<scope>test</scope>
 		</dependency>
     </dependencies>
+     <distributionManagement>
+    		<repository>
+      		    <id>nexus</id>
+     		    <name>prakash-release</name>
+      		    <urlhttp://65.0.178.156:8081/repository/prakash-release/</url>
+    		</repository>
+	    
+       		<snapshotRepository>
+      		    <id>nexus</id>
+      		    <name>prakash-snapshot</name>
+      		    <url>http://65.0.178.156:8081/repository/prakash-snapshot//</url>
+    		</snapshotRepository>
+    </distributionManagement>
     <build>
         <plugins>
             <plugin>
